@@ -1,0 +1,9 @@
+{
+  "name": "classic-snake",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "test": "node tests/snakeLogic.test.js"
+  }
+}

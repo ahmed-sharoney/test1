@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classic Snake</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-theme="classic">
+    <main class="app">
+      <h1>Snake</h1>
+      <div class="hud">
+        <p>Score: <span id="score">0</span></p>
+        <p id="status">Running</p>
+      </div>
+      <div class="theme-picker">
+        <label for="themeSelect">Theme:</label>
+        <select id="themeSelect" aria-label="Choose Snake color theme">
+          <option value="classic">Classic Green</option>
+          <option value="neon">Neon Purple</option>
+        </select>
+      </div>
+      <section id="grid" class="grid" aria-label="Snake board"></section>
+      <div class="actions">
+        <button id="pauseBtn" type="button">Pause</button>
+        <button id="restartBtn" type="button">Restart</button>
+      </div>
+      <div class="controls" aria-label="Directional controls">
+        <button data-dir="up" type="button">↑</button>
+        <div>
+          <button data-dir="left" type="button">←</button>
+          <button data-dir="down" type="button">↓</button>
+          <button data-dir="right" type="button">→</button>
+        </div>
+      </div>
+      <p class="hint">Use Arrow keys or WASD to move. Space toggles pause.</p>
+    </main>
+
+    <script src="snakeLogic.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
